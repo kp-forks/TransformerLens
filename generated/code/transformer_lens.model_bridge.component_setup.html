@@ -188,6 +188,7 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.main_benchmark.html">transformer_lens.benchmarks.main_benchmark module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.multimodal.html">transformer_lens.benchmarks.multimodal module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.text_quality.html">transformer_lens.benchmarks.text_quality module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.text_quality_profiles.html">transformer_lens.benchmarks.text_quality_profiles module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.utils.html">transformer_lens.benchmarks.utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.vision.html">transformer_lens.benchmarks.vision module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.weight_processing.html">transformer_lens.benchmarks.weight_processing module</a></li>
@@ -521,6 +522,7 @@
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.direct_logit_attribution.html">transformer_lens.tools.analysis.direct_logit_attribution module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.direct_path_patching.html">transformer_lens.tools.analysis.direct_path_patching module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens.html">transformer_lens.tools.analysis.jacobian_lens module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html">transformer_lens.tools.analysis.jacobian_lens_decomposition module</a></li>
 </ul>
 </li>
 <li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.tools.model_registry.html">transformer_lens.tools.model_registry package</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of transformer_lens.tools.model_registry package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -554,6 +556,7 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.devices.html">transformer_lens.utilities.devices module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.exploratory_utils.html">transformer_lens.utilities.exploratory_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.gpu_utils.html">transformer_lens.utilities.gpu_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.heterogeneous_config.html">transformer_lens.utilities.heterogeneous_config module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.hf_utils.html">transformer_lens.utilities.hf_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.initialization_utils.html">transformer_lens.utilities.initialization_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.library_utils.html">transformer_lens.utilities.library_utils module</a></li>
@@ -561,6 +564,7 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.logits_utils.html">transformer_lens.utilities.logits_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.matrix.html">transformer_lens.utilities.matrix module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.multi_gpu.html">transformer_lens.utilities.multi_gpu module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.quantization.html">transformer_lens.utilities.quantization module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.slice.html">transformer_lens.utilities.slice module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tensors.html">transformer_lens.utilities.tensors module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tokenize_utils.html">transformer_lens.utilities.tokenize_utils module</a></li>
@@ -663,6 +667,12 @@
         <article role="main">
           <section id="module-transformer_lens.model_bridge.component_setup">
 <span id="transformer-lens-model-bridge-component-setup-module"></span><h1>transformer_lens.model_bridge.component_setup module<a class="headerlink" href="#module-transformer_lens.model_bridge.component_setup" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="transformer_lens.model_bridge.component_setup.refresh_container_state_owners">
+<span class="sig-prename descclassname"><span class="pre">transformer_lens.model_bridge.component_setup.</span></span><span class="sig-name descname"><span class="pre">refresh_container_state_owners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bridge_module</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Module</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#transformer_lens.model_bridge.component_setup.refresh_container_state_owners" title="Link to this definition">¶</a></dt>
+<dd><p>Refresh registered container state from the original model tree.</p>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="transformer_lens.model_bridge.component_setup.replace_remote_component">
 <span class="sig-prename descclassname"><span class="pre">transformer_lens.model_bridge.component_setup.</span></span><span class="sig-name descname"><span class="pre">replace_remote_component</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replacement_component</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Module</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remote_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remote_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Module</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#transformer_lens.model_bridge.component_setup.replace_remote_component" title="Link to this definition">¶</a></dt>
@@ -800,6 +810,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">transformer_lens.model_bridge.component_setup module</a><ul>
+<li><a class="reference internal" href="#transformer_lens.model_bridge.component_setup.refresh_container_state_owners"><code class="docutils literal notranslate"><span class="pre">refresh_container_state_owners()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.model_bridge.component_setup.replace_remote_component"><code class="docutils literal notranslate"><span class="pre">replace_remote_component()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.model_bridge.component_setup.set_original_components"><code class="docutils literal notranslate"><span class="pre">set_original_components()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.model_bridge.component_setup.setup_blocks_bridge"><code class="docutils literal notranslate"><span class="pre">setup_blocks_bridge()</span></code></a></li>
