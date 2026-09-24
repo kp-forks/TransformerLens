@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="transformer_lens.tools.analysis.jacobian_lens_decomposition module" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html" /><link rel="prev" title="transformer_lens.tools.analysis.direct_path_patching module" href="transformer_lens.tools.analysis.direct_path_patching.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch module" href="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.html" /><link rel="prev" title="transformer_lens.tools.analysis.direct_path_patching module" href="transformer_lens.tools.analysis.direct_path_patching.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
         <title>transformer_lens.tools.analysis.jacobian_lens module - TransformerLens Documentation</title>
@@ -166,14 +166,18 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">News</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../content/news/release-3.0.html">TransformerLens 3.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../content/news/release-2.0.html">TransformerLens 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/news/release-4.0.html">TransformerLens 4.0</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/news/past_releases.html">Past Major Releases</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Past Major Releases</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../content/news/release-3.0.html">TransformerLens 3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content/news/release-2.0.html">TransformerLens 2.0</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">transformer_lens</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of transformer_lens</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current has-children"><a class="reference internal" href="transformer_lens.html">transformer_lens package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of transformer_lens package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.benchmarks.html">transformer_lens.benchmarks package</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of transformer_lens.benchmarks package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">transformer_lens</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of transformer_lens</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="transformer_lens.html">transformer_lens package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of transformer_lens package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.benchmarks.html">transformer_lens.benchmarks package</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of transformer_lens.benchmarks package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.activation_cache.html">transformer_lens.benchmarks.activation_cache module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.audio.html">transformer_lens.benchmarks.audio module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.backward_gradients.html">transformer_lens.benchmarks.backward_gradients module</a></li>
@@ -182,9 +186,7 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.encoder_common.html">transformer_lens.benchmarks.encoder_common module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.forward_pass.html">transformer_lens.benchmarks.forward_pass module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.generation.html">transformer_lens.benchmarks.generation module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.granular_weight_processing.html">transformer_lens.benchmarks.granular_weight_processing module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.hook_registration.html">transformer_lens.benchmarks.hook_registration module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.hook_structure.html">transformer_lens.benchmarks.hook_structure module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.main_benchmark.html">transformer_lens.benchmarks.main_benchmark module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.multimodal.html">transformer_lens.benchmarks.multimodal module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.text_quality.html">transformer_lens.benchmarks.text_quality module</a></li>
@@ -194,35 +196,12 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.benchmarks.weight_processing.html">transformer_lens.benchmarks.weight_processing module</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.cache.html">transformer_lens.cache package</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of transformer_lens.cache package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.cache.html">transformer_lens.cache package</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of transformer_lens.cache package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.cache.key_value_cache.html">transformer_lens.cache.key_value_cache module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.cache.key_value_cache_entry.html">transformer_lens.cache.key_value_cache_entry module</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.components.html">transformer_lens.components package</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of transformer_lens.components package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.abstract_attention.html">transformer_lens.components.abstract_attention module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.attention.html">transformer_lens.components.attention module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.bert_block.html">transformer_lens.components.bert_block module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.bert_embed.html">transformer_lens.components.bert_embed module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.bert_mlm_head.html">transformer_lens.components.bert_mlm_head module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.bert_nsp_head.html">transformer_lens.components.bert_nsp_head module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.bert_pooler.html">transformer_lens.components.bert_pooler module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.embed.html">transformer_lens.components.embed module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.grouped_query_attention.html">transformer_lens.components.grouped_query_attention module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.layer_norm.html">transformer_lens.components.layer_norm module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.layer_norm_pre.html">transformer_lens.components.layer_norm_pre module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.pos_embed.html">transformer_lens.components.pos_embed module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.rms_norm.html">transformer_lens.components.rms_norm module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.rms_norm_pre.html">transformer_lens.components.rms_norm_pre module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.t5_attention.html">transformer_lens.components.t5_attention module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.t5_block.html">transformer_lens.components.t5_block module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.token_typed_embed.html">transformer_lens.components.token_typed_embed module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.transformer_block.html">transformer_lens.components.transformer_block module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.components.unembed.html">transformer_lens.components.unembed module</a></li>
-</ul>
-</li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.config.html">transformer_lens.config package</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of transformer_lens.config package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.config.hooked_transformer_config.html">transformer_lens.config.hooked_transformer_config module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.config.transformer_bridge_config.html">transformer_lens.config.transformer_bridge_config module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.config.transformer_lens_config.html">transformer_lens.config.transformer_lens_config module</a></li>
 </ul>
@@ -255,7 +234,6 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.factories.html">transformer_lens.factories package</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of transformer_lens.factories package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.factories.activation_function_factory.html">transformer_lens.factories.activation_function_factory module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.factories.architecture_adapter_factory.html">transformer_lens.factories.architecture_adapter_factory module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="transformer_lens.factories.mlp_factory.html">transformer_lens.factories.mlp_factory module</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.lit.html">transformer_lens.lit package</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of transformer_lens.lit package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -298,6 +276,7 @@
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.mpt_alibi_attention.html">transformer_lens.model_bridge.generalized_components.mpt_alibi_attention module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.normalization.html">transformer_lens.model_bridge.generalized_components.normalization module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.opaque_block.html">transformer_lens.model_bridge.generalized_components.opaque_block module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.pooler.html">transformer_lens.model_bridge.generalized_components.pooler module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.pos_embed.html">transformer_lens.model_bridge.generalized_components.pos_embed module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.position_embedding_hooks_mixin.html">transformer_lens.model_bridge.generalized_components.position_embedding_hooks_mixin module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.generalized_components.position_embeddings_attention.html">transformer_lens.model_bridge.generalized_components.position_embeddings_attention module</a></li>
@@ -321,15 +300,48 @@
 </ul>
 </li>
 <li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.html">transformer_lens.model_bridge.sources package</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.native.html">transformer_lens.model_bridge.sources.native package</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.native package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.html">transformer_lens.model_bridge.sources.inspect package</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.inspect package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.conftest.html">transformer_lens.model_bridge.sources.inspect.conftest module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.driver.html">transformer_lens.model_bridge.sources.inspect.driver module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.eval.html">transformer_lens.model_bridge.sources.inspect.eval module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.hooks.html">transformer_lens.model_bridge.sources.inspect.hooks module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.intervention.html">transformer_lens.model_bridge.sources.inspect.intervention module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.profiles.html">transformer_lens.model_bridge.sources.inspect.profiles module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.source.html">transformer_lens.model_bridge.sources.inspect.source module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.transformers_provider.html">transformer_lens.model_bridge.sources.inspect.transformers_provider module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.vllm_provider.html">transformer_lens.model_bridge.sources.inspect.vllm_provider module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.inspect.wire.html">transformer_lens.model_bridge.sources.inspect.wire module</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.native.html">transformer_lens.model_bridge.sources.native package</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.native package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.native.init.html">transformer_lens.model_bridge.sources.native.init module</a></li>
 <li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.native.model.html">transformer_lens.model_bridge.sources.native.model module</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.sources.transformers.html">transformer_lens.model_bridge.sources.transformers module</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.transformers.html">transformer_lens.model_bridge.sources.transformers package</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.transformers package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.transformers.helpers.html">transformer_lens.model_bridge.sources.transformers.helpers module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.transformers.source.html">transformer_lens.model_bridge.sources.transformers.source module</a></li>
 </ul>
 </li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.html">transformer_lens.model_bridge.supported_architectures package</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.supported_architectures package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.html">transformer_lens.model_bridge.sources.vllm package</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.vllm package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.overlays.html">transformer_lens.model_bridge.sources.vllm.overlays package</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.sources.vllm.overlays package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.overlays.base.html">transformer_lens.model_bridge.sources.vllm.overlays.base module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.overlays.decoder_only.html">transformer_lens.model_bridge.sources.vllm.overlays.decoder_only module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.driver.html">transformer_lens.model_bridge.sources.vllm.driver module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.internals.html">transformer_lens.model_bridge.sources.vllm.internals module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.intervention_specs.html">transformer_lens.model_bridge.sources.vllm.intervention_specs module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.plugin.html">transformer_lens.model_bridge.sources.vllm.plugin module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.source.html">transformer_lens.model_bridge.sources.vllm.source module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="transformer_lens.model_bridge.sources.vllm.worker_extension.html">transformer_lens.model_bridge.sources.vllm.worker_extension module</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.sources.tl_legacy.html">transformer_lens.model_bridge.sources.tl_legacy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.sources.transformers_driver.html">transformer_lens.model_bridge.sources.transformers_driver module</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.html">transformer_lens.model_bridge.supported_architectures package</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of transformer_lens.model_bridge.supported_architectures package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.afmoe.html">transformer_lens.model_bridge.supported_architectures.afmoe module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.apertus.html">transformer_lens.model_bridge.supported_architectures.apertus module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.arcee.html">transformer_lens.model_bridge.supported_architectures.arcee module</a></li>
@@ -467,6 +479,7 @@
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.t5gemma2.html">transformer_lens.model_bridge.supported_architectures.t5gemma2 module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.vaultgemma.html">transformer_lens.model_bridge.supported_architectures.vaultgemma module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.vit.html">transformer_lens.model_bridge.supported_architectures.vit module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.wav2vec2.html">transformer_lens.model_bridge.supported_architectures.wav2vec2 module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.xglm.html">transformer_lens.model_bridge.supported_architectures.xglm module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.youtu.html">transformer_lens.model_bridge.supported_architectures.youtu module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.model_bridge.supported_architectures.zamba2.html">transformer_lens.model_bridge.supported_architectures.zamba2 module</a></li>
@@ -474,60 +487,36 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.architecture_adapter.html">transformer_lens.model_bridge.architecture_adapter module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.bridge.html">transformer_lens.model_bridge.bridge module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.bridge_core.html">transformer_lens.model_bridge.bridge_core module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.buffer_restore.html">transformer_lens.model_bridge.buffer_restore module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.compat.html">transformer_lens.model_bridge.compat module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.component_setup.html">transformer_lens.model_bridge.component_setup module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.composition_scores.html">transformer_lens.model_bridge.composition_scores module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.driver_protocol.html">transformer_lens.model_bridge.driver_protocol module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.exceptions.html">transformer_lens.model_bridge.exceptions module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.get_params_util.html">transformer_lens.model_bridge.get_params_util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.remote_bridge.html">transformer_lens.model_bridge.remote_bridge module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.transformer_bridge.html">transformer_lens.model_bridge.transformer_bridge module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.model_bridge.types.html">transformer_lens.model_bridge.types module</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.pretrained.html">transformer_lens.pretrained package</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of transformer_lens.pretrained package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.html">transformer_lens.pretrained.weight_conversions package</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of transformer_lens.pretrained.weight_conversions package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.apertus.html">transformer_lens.pretrained.weight_conversions.apertus module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.bert.html">transformer_lens.pretrained.weight_conversions.bert module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.bloom.html">transformer_lens.pretrained.weight_conversions.bloom module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.coder.html">transformer_lens.pretrained.weight_conversions.coder module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.gemma.html">transformer_lens.pretrained.weight_conversions.gemma module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.gpt2.html">transformer_lens.pretrained.weight_conversions.gpt2 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.gptj.html">transformer_lens.pretrained.weight_conversions.gptj module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.hubert.html">transformer_lens.pretrained.weight_conversions.hubert module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.llama.html">transformer_lens.pretrained.weight_conversions.llama module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.mingpt.html">transformer_lens.pretrained.weight_conversions.mingpt module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.mistral.html">transformer_lens.pretrained.weight_conversions.mistral module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.mixtral.html">transformer_lens.pretrained.weight_conversions.mixtral module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.nanogpt.html">transformer_lens.pretrained.weight_conversions.nanogpt module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.neel_solu_old.html">transformer_lens.pretrained.weight_conversions.neel_solu_old module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.neo.html">transformer_lens.pretrained.weight_conversions.neo module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.neox.html">transformer_lens.pretrained.weight_conversions.neox module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.olmo.html">transformer_lens.pretrained.weight_conversions.olmo module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.olmo2.html">transformer_lens.pretrained.weight_conversions.olmo2 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.olmo3.html">transformer_lens.pretrained.weight_conversions.olmo3 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.olmoe.html">transformer_lens.pretrained.weight_conversions.olmoe module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.openai.html">transformer_lens.pretrained.weight_conversions.openai module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.opt.html">transformer_lens.pretrained.weight_conversions.opt module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.phi.html">transformer_lens.pretrained.weight_conversions.phi module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.phi3.html">transformer_lens.pretrained.weight_conversions.phi3 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.qwen.html">transformer_lens.pretrained.weight_conversions.qwen module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.qwen2.html">transformer_lens.pretrained.weight_conversions.qwen2 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.qwen3.html">transformer_lens.pretrained.weight_conversions.qwen3 module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="transformer_lens.pretrained.weight_conversions.t5.html">transformer_lens.pretrained.weight_conversions.t5 module</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3 current has-children"><a class="reference internal" href="transformer_lens.tools.html">transformer_lens.tools package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of transformer_lens.tools package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l4 current has-children"><a class="reference internal" href="transformer_lens.tools.analysis.html">transformer_lens.tools.analysis package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of transformer_lens.tools.analysis package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="transformer_lens.tools.html">transformer_lens.tools package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of transformer_lens.tools package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current has-children"><a class="reference internal" href="transformer_lens.tools.analysis.html">transformer_lens.tools.analysis package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of transformer_lens.tools.analysis package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.attribution_patching.html">transformer_lens.tools.analysis.attribution_patching module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.backward_lens.html">transformer_lens.tools.analysis.backward_lens module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.direct_logit_attribution.html">transformer_lens.tools.analysis.direct_logit_attribution module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.direct_path_patching.html">transformer_lens.tools.analysis.direct_path_patching module</a></li>
 <li class="toctree-l5 current current-page"><a class="current reference internal" href="#">transformer_lens.tools.analysis.jacobian_lens module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.html">transformer_lens.tools.analysis.jacobian_lens_coordinate_patch module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html">transformer_lens.tools.analysis.jacobian_lens_decomposition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.projection_kernel.html">transformer_lens.tools.analysis.projection_kernel module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.analysis.svd_circuits.html">transformer_lens.tools.analysis.svd_circuits module</a></li>
 </ul>
 </li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.tools.model_registry.html">transformer_lens.tools.model_registry package</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of transformer_lens.tools.model_registry package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="transformer_lens.tools.model_registry.html">transformer_lens.tools.model_registry package</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of transformer_lens.tools.model_registry package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.alias_drift.html">transformer_lens.tools.model_registry.alias_drift module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.api.html">transformer_lens.tools.model_registry.api module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.checkpoints.html">transformer_lens.tools.model_registry.checkpoints module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.discover_architectures.html">transformer_lens.tools.model_registry.discover_architectures module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.exceptions.html">transformer_lens.tools.model_registry.exceptions module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.generate_report.html">transformer_lens.tools.model_registry.generate_report module</a></li>
@@ -540,14 +529,16 @@
 <li class="toctree-l5"><a class="reference internal" href="transformer_lens.tools.model_registry.verify_models.html">transformer_lens.tools.model_registry.verify_models module</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.tools.training.html">transformer_lens.tools.training module</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.utilities.html">transformer_lens.utilities package</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of transformer_lens.utilities package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="transformer_lens.utilities.html">transformer_lens.utilities package</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of transformer_lens.utilities package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.activation_functions.html">transformer_lens.utilities.activation_functions module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.addmm.html">transformer_lens.utilities.addmm module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.aliases.html">transformer_lens.utilities.aliases module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.architectures.html">transformer_lens.utilities.architectures module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.attention.html">transformer_lens.utilities.attention module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.attn_implementation.html">transformer_lens.utilities.attn_implementation module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.attribute_utils.html">transformer_lens.utilities.attribute_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.bridge_components.html">transformer_lens.utilities.bridge_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.cache.html">transformer_lens.utilities.cache module</a></li>
@@ -564,31 +555,30 @@
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.logits_utils.html">transformer_lens.utilities.logits_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.matrix.html">transformer_lens.utilities.matrix module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.multi_gpu.html">transformer_lens.utilities.multi_gpu module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.parameter_swap.html">transformer_lens.utilities.parameter_swap module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.quantization.html">transformer_lens.utilities.quantization module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.slice.html">transformer_lens.utilities.slice module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tensors.html">transformer_lens.utilities.tensors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tl_checkpoint_conversion.html">transformer_lens.utilities.tl_checkpoint_conversion module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tokenize_utils.html">transformer_lens.utilities.tokenize_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.tracr.html">transformer_lens.utilities.tracr module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transformer_lens.utilities.typed_module_list.html">transformer_lens.utilities.typed_module_list module</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="transformer_lens.HookedAudioEncoder.html">transformer_lens.HookedAudioEncoder module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.HookedRootModule.html">transformer_lens.HookedRootModule module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.evals.html">transformer_lens.evals module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.head_detector.html">transformer_lens.head_detector module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.hook_points.html">transformer_lens.hook_points module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="transformer_lens.loading_from_pretrained.html">transformer_lens.loading_from_pretrained module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="transformer_lens.model_protocol.html">transformer_lens.model_protocol module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.patching.html">transformer_lens.patching module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.supported_models.html">transformer_lens.supported_models module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="transformer_lens.train.html">transformer_lens.train module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="transformer_lens.utils.html">transformer_lens.utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="transformer_lens.weight_processing.html">transformer_lens.weight_processing module</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/model_tables.html">Model Tables</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of Model Tables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../model_properties_table.html">HookedTransformer Model Properties</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/model_tables.html">Model Tables</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of Model Tables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../content/hooked_transformer_model_properties.html">HookedTransformer Model Properties</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transformer_bridge_models.html">TransformerBridge Models</a></li>
 </ul>
 </li>
@@ -596,21 +586,28 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../content/migrating_to_v4.html">Migrating to TransformerLens 4.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/migrating_to_v3.html">Migrating to TransformerLens 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/analysis_tools.html">Choosing an analysis tool</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/tutorials.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/citation.html">Citation</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of Contributing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of Contributing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-creation-guide.html">Architecture Adapter Creation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-unit-test-guide.html">Architecture Unit Test Suite Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/hf-model-analysis-guide.html">HuggingFace Model Analysis Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/hf-scraper.html">HuggingFace Model Scraper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/external-adapter-registration.html">External Architecture Adapter Registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-builder-tool.html">Automated Adapter Builder</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/hook_system.html">The Hook System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/drivers.html">Execution Backends (the Driver System)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/compatibility_mode.html">TransformerBridge Compatibility Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/ssm_interpretability.html">SSM / Recurrent-Model Interpretability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/projection_kernel.html">Projection Kernel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/jacobian_lens_fitting.html">Fitting a Jacobian lens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../demos/Jacobian_Lens_Decomposition_Demo.html">Jacobian Lens: sparse decomposition in J-space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/backward_lens.html">Backward Lens</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../content/debugging_numerical_divergence.html">Debugging Numerical Divergence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../demos/Main_Demo.html">Transformer Lens Main Demo Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../demos/Main_Demo.html#Setup">Setup</a></li>
@@ -621,12 +618,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of Contributing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../content/contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of Contributing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-creation-guide.html">Architecture Adapter Creation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-unit-test-guide.html">Architecture Unit Test Suite Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/hf-model-analysis-guide.html">HuggingFace Model Analysis Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/hf-scraper.html">HuggingFace Model Scraper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/external-adapter-registration.html">External Architecture Adapter Registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content/adapter_development/adapter-builder-tool.html">Automated Adapter Builder</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://transformerlensorg.github.io/TransformerLens/_static/coverage/">Code Coverage</a></li>
@@ -785,8 +783,91 @@ and normalized on every hook invocation). Defaults to all.</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache">
 <span class="sig-name descname"><span class="pre">clear_device_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache" title="Link to this definition">¶</a></dt>
-<dd><p>Release lazily cached Jacobian copies and full-vocabulary dictionaries on
-accelerator devices.</p>
+<dd><p>Release cached Jacobians, dictionaries, and unembedding snapshots on devices.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch">
+<span class="sig-name descname"><span class="pre">coordinate_patch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation_or_prompt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decomposition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html#transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition" title="transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition"><span class="pre">JSpaceDecomposition</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'substitute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'nonnegative_orthogonal_matching_pursuit'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.html#transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.CoordinatePatch" title="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.CoordinatePatch"><span class="pre">CoordinatePatch</span></a></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch" title="Link to this definition">¶</a></dt>
+<dd><p>Patch sparse J-space coordinates for an activation at <code class="docutils literal notranslate"><span class="pre">layer</span></code>.</p>
+<p>The activation may be a raw <code class="docutils literal notranslate"><span class="pre">[d_model]</span></code> vector or a prompt paired with <code class="docutils literal notranslate"><span class="pre">position</span></code>,
+exactly as in <a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.decompose" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.decompose"><code class="xref py py-meth docutils literal notranslate"><span class="pre">decompose()</span></code></a>. <code class="docutils literal notranslate"><span class="pre">source_token</span></code> must occur in the active sparse support.
+<code class="docutils literal notranslate"><span class="pre">substitute</span></code> replaces the target coordinate with the source coordinate and zeros the
+source; <code class="docutils literal notranslate"><span class="pre">swap</span></code> exchanges them. Other coordinates and <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">reconstruction</span></code> are fixed.</p>
+<p>A supplied <code class="docutils literal notranslate"><span class="pre">decomposition</span></code> avoids repeating the vocabulary-scale sparse solve after its
+activation and dictionary compatibility have been validated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – A raw <code class="docutils literal notranslate"><span class="pre">TransformerBridge</span></code>.</p></li>
+<li><p><strong>activation_or_prompt</strong> – An activation vector, or a prompt (string / token tensor).</p></li>
+<li><p><strong>layer</strong> – Source layer (must be a fitted source layer).</p></li>
+<li><p><strong>source_token</strong> – Active source concept, as a single-token string or token id.</p></li>
+<li><p><strong>target_token</strong> – Distinct target concept, as a single-token string or token id.</p></li>
+<li><p><strong>position</strong> – Token position when a prompt is given; <code class="docutils literal notranslate"><span class="pre">None</span></code> for a raw activation.</p></li>
+<li><p><strong>decomposition</strong> – Optional compatible decomposition of this activation and dictionary.</p></li>
+<li><p><strong>k</strong> – Sparse-solver upper bound when <code class="docutils literal notranslate"><span class="pre">decomposition</span></code> is not supplied.</p></li>
+<li><p><strong>mode</strong> – <code class="docutils literal notranslate"><span class="pre">&quot;substitute&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;swap&quot;</span></code>.</p></li>
+<li><p><strong>alpha</strong> – Finite interpolation strength; zero is an exact no-op.</p></li>
+<li><p><strong>algorithm</strong> – Sparse coefficient-update rule when solving a fresh decomposition.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">CoordinatePatch</span></code> containing the edited frame, diagnostics, and activation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch_hooks">
+<span class="sig-name descname"><span class="pre">coordinate_patch_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decomposition_cache</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MutableMapping</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html#transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition" title="transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition"><span class="pre">JSpaceDecomposition</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'substitute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'nonnegative_orthogonal_matching_pursuit'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Hooks that anchor-patch one J-space coordinate live, per forward-pass position.</p>
+<p>Unlike <a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">coordinate_patch()</span></code></a>, which edits one already-captured activation offline,
+this installs a forward hook that solves <code class="xref py py-func docutils literal notranslate"><span class="pre">solve_coordinate_patch()</span></code> independently for
+every <code class="docutils literal notranslate"><span class="pre">(batch_idx,</span> <span class="pre">position)</span></code> pair at each requested layer – a vocabulary-scale sparse
+decomposition per pair, per hook firing, unless <code class="docutils literal notranslate"><span class="pre">decomposition_cache</span></code> supplies one
+already validated for that <code class="docutils literal notranslate"><span class="pre">(layer,</span> <span class="pre">batch_idx,</span> <span class="pre">position)</span></code> key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – The model the hooks will run on.</p></li>
+<li><p><strong>source_token</strong> – Active source concept, as a single-token string or token id.</p></li>
+<li><p><strong>target_token</strong> – Distinct target concept, as a single-token string or token id.</p></li>
+<li><p><strong>layers</strong> – Layers to intervene at.</p></li>
+<li><p><strong>positions</strong> – Chunk-local positions to patch (negative indices allowed and normalized on
+every hook invocation). Required – there is no full-sequence default, because a
+silent default would trigger a vocabulary-scale solve at every position.</p></li>
+<li><p><strong>decomposition_cache</strong> – Optional caller-owned mapping from <code class="docutils literal notranslate"><span class="pre">(layer,</span> <span class="pre">batch_idx,</span>
+<span class="pre">position)</span></code> to a previously validated
+<a class="reference internal" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html#transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition" title="transformer_lens.tools.analysis.jacobian_lens_decomposition.JSpaceDecomposition"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSpaceDecomposition</span></code></a>.
+A hit skips the vocabulary-scale scan; a miss solves and populates the cache.
+Purely a performance path – correctness does not depend on it.</p></li>
+<li><p><strong>k</strong> – Sparse-solver upper bound on a cache miss.</p></li>
+<li><p><strong>mode</strong> – <code class="docutils literal notranslate"><span class="pre">&quot;substitute&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;swap&quot;</span></code>.</p></li>
+<li><p><strong>alpha</strong> – Finite interpolation strength; zero is an exact no-op.</p></li>
+<li><p><strong>algorithm</strong> – Sparse coefficient-update rule on a cache miss.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[(hook_name,</span> <span class="pre">fn),</span> <span class="pre">...]</span></code> for <code class="docutils literal notranslate"><span class="pre">model.hooks(fwd_hooks=...)</span></code>.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If <code class="docutils literal notranslate"><span class="pre">positions</span></code> is empty, if <code class="docutils literal notranslate"><span class="pre">source_token</span></code> and <code class="docutils literal notranslate"><span class="pre">target_token</span></code>
+    resolve to the same id, or if <code class="docutils literal notranslate"><span class="pre">source_token</span></code> is not in the top-<code class="docutils literal notranslate"><span class="pre">k</span></code> active
+    support of every patched <code class="docutils literal notranslate"><span class="pre">(batch_idx,</span> <span class="pre">position)</span></code> pair <em>at the moment its hook
+    fires</em> – the whole forward pass fails rather than silently patching a subset.
+    This precondition is stronger and more order-dependent than “active on a clean
+    forward pass”: in a band of layers an earlier hook’s patch edits the residual
+    that a later layer re-decomposes, and <code class="docutils literal notranslate"><span class="pre">substitute</span></code>/<code class="docutils literal notranslate"><span class="pre">swap</span></code> zero or move the
+    source coordinate, so the source can be removed from a later layer’s active
+    support even though it was active on an unhooked pass. Stacking layers or
+    positions therefore makes this progressively harder to satisfy.</p>
+</dd>
+<dt class="field-even">Warns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>UserWarning</strong> – Once per call, naming the number of layers and positions that will
+perform a live vocabulary-scale solve on every cache miss.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -859,7 +940,8 @@ across prompt slices.</p>
 <li><p><strong>model</strong> – A raw <code class="docutils literal notranslate"><span class="pre">TransformerBridge</span></code>. Model parameters are temporarily
 frozen (<code class="docutils literal notranslate"><span class="pre">requires_grad=False</span></code>) during fitting and restored
 after. Cotangents and activation gradients use the model dtype;
-fit with a float32 model for the highest-fidelity estimator.</p></li>
+fit with a float32 model for the highest-fidelity estimator. The
+model and all of its submodules must be in evaluation mode.</p></li>
 <li><p><strong>prompts</strong> – Prompt strings. Prompts too short to contain a valid
 position (<code class="docutils literal notranslate"><span class="pre">seq_len</span> <span class="pre">&lt;=</span> <span class="pre">skip_first_positions</span> <span class="pre">+</span> <span class="pre">1</span></code>) are skipped
 with a warning and do not count toward <code class="docutils literal notranslate"><span class="pre">n_prompts</span></code>.</p></li>
@@ -883,8 +965,8 @@ average.</p></li>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>TypeError</strong> – If model is not a <code class="docutils literal notranslate"><span class="pre">TransformerBridge</span></code>.</p></li>
-<li><p><strong>ValueError</strong> – On compatibility mode, invalid provenance or layer
-    indices, or if no prompt was long enough to fit on.</p></li>
+<li><p><strong>ValueError</strong> – On compatibility mode, training mode, invalid provenance
+    or layer indices, or if no prompt was long enough to fit on.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1000,12 +1082,13 @@ weight-processing mismatches fail here rather than at first use.</p>
 <span class="sig-name descname"><span class="pre">lens_vector_dictionary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Float</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'d_vocab</span> <span class="pre">d_model'</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.lens_vector_dictionary" title="Link to this definition">¶</a></dt>
 <dd><p>Full-vocabulary J-lens dictionary at <code class="docutils literal notranslate"><span class="pre">layer</span></code>: <code class="docutils literal notranslate"><span class="pre">[d_vocab,</span> <span class="pre">d_model]</span></code>.</p>
 <p>Row <code class="docutils literal notranslate"><span class="pre">t</span></code> is the J-lens vector <code class="docutils literal notranslate"><span class="pre">v_t</span> <span class="pre">=</span> <span class="pre">J[layer]^T</span> <span class="pre">W_U[:,</span> <span class="pre">t]</span></code> – this is
-<a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.lens_vectors" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.lens_vectors"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lens_vectors()</span></code></a> over the entire vocabulary. The result is cached per
-(layer, device) so a sparse decomposition can reuse it; <a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clear_device_cache()</span></code></a>
-releases it.</p>
+<a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.lens_vectors" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.lens_vectors"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lens_vectors()</span></code></a> over the entire vocabulary. The result is cached while the
+model’s unembedding is unchanged so a sparse decomposition can reuse it;
+<a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clear_device_cache()</span></code></a> releases it.</p>
 <p>The dictionary is vocabulary-sized and cached on the model’s device
 (<code class="docutils literal notranslate"><span class="pre">d_vocab</span> <span class="pre">*</span> <span class="pre">d_model</span></code> fp32 values, on the order of gigabytes for a large
-vocabulary), one entry per requested layer.</p>
+vocabulary), one entry per requested layer. One detached copy of <code class="docutils literal notranslate"><span class="pre">W_U</span></code> is
+retained per device to detect changes without transferring weights to the host.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1243,23 +1326,57 @@ and normalized on every hook invocation). Defaults to all.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks">
-<span class="sig-name descname"><span class="pre">swap_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks" title="Link to this definition">¶</a></dt>
-<dd><p>Hooks that swap two concepts’ coordinates in lens space.</p>
-<p>The paper’s patching-in-lens-coordinates intervention: with
-<code class="docutils literal notranslate"><span class="pre">V</span> <span class="pre">=</span> <span class="pre">[v_s,</span> <span class="pre">v_t]</span></code> and lens coordinates <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">V⁺</span> <span class="pre">h</span></code> (pseudoinverse),
-the update is <code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">&lt;-</span> <span class="pre">h</span> <span class="pre">+</span> <span class="pre">alpha</span> <span class="pre">*</span> <span class="pre">V</span> <span class="pre">(sigma(c)</span> <span class="pre">-</span> <span class="pre">c)</span></code> where <code class="docutils literal notranslate"><span class="pre">sigma</span></code>
-exchanges the two coordinates. The component of <code class="docutils literal notranslate"><span class="pre">h</span></code> orthogonal to
-<code class="docutils literal notranslate"><span class="pre">span{v_s,</span> <span class="pre">v_t}</span></code> is untouched. <code class="docutils literal notranslate"><span class="pre">alpha=2</span></code> is the paper’s
-“double-strength” swap.</p>
+<dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_clamp_hooks">
+<span class="sig-name descname"><span class="pre">swap_clamp_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_cache</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ActivationCache</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_clamp_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Hooks that clamp lens coordinates to their clean-run exchange.</p>
+<p>For each layer, this projects the corresponding activation from
+<code class="docutils literal notranslate"><span class="pre">clean_cache</span></code> into that layer’s lens basis, exchanges its source and
+target coordinates once, and holds the live activation at that fixed
+target. Unlike <a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks"><code class="xref py py-meth docutils literal notranslate"><span class="pre">swap_hooks()</span></code></a>, the update is idempotent at each
+layer: <code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">&lt;-</span> <span class="pre">h</span> <span class="pre">+</span> <span class="pre">V</span> <span class="pre">(c_target</span> <span class="pre">-</span> <span class="pre">V⁺h)</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> – The model the hooks will run on.</p></li>
 <li><p><strong>source_token</strong> – The concept to remove (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">France&quot;</span></code>).</p></li>
 <li><p><strong>target_token</strong> – The concept to install (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">China&quot;</span></code>).</p></li>
-<li><p><strong>layers</strong> – Layers to intervene at (the paper clamps the swap across an
-intermediate-layer band).</p></li>
+<li><p><strong>layers</strong> – Layers to intervene at.</p></li>
+<li><p><strong>clean_cache</strong> – Activations from an unmodified <code class="docutils literal notranslate"><span class="pre">run_with_cache</span></code> at
+each requested layer’s <code class="docutils literal notranslate"><span class="pre">blocks.{layer}.hook_out</span></code> name. Either
+the <code class="docutils literal notranslate"><span class="pre">ActivationCache</span></code> it returns by default or the plain dict
+from <code class="docutils literal notranslate"><span class="pre">return_cache_object=False</span></code> is accepted.</p></li>
+<li><p><strong>positions</strong> – Chunk-local positions to clamp (negative indices allowed
+and normalized against the clean activations). Defaults to all.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[(hook_name,</span> <span class="pre">fn),</span> <span class="pre">...]</span></code> for <code class="docutils literal notranslate"><span class="pre">model.hooks(fwd_hooks=...)</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks">
+<span class="sig-name descname"><span class="pre">swap_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Hooks that swap two concepts’ <em>live</em> coordinates in lens space.</p>
+<p>The paper’s patching-in-lens-coordinates intervention: with
+<code class="docutils literal notranslate"><span class="pre">V</span> <span class="pre">=</span> <span class="pre">[v_s,</span> <span class="pre">v_t]</span></code> and lens coordinates <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">V⁺</span> <span class="pre">h</span></code> (pseudoinverse),
+the update is <code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">&lt;-</span> <span class="pre">h</span> <span class="pre">+</span> <span class="pre">alpha</span> <span class="pre">*</span> <span class="pre">V</span> <span class="pre">(sigma(c)</span> <span class="pre">-</span> <span class="pre">c)</span></code> where <code class="docutils literal notranslate"><span class="pre">sigma</span></code>
+exchanges the two coordinates. The component of <code class="docutils literal notranslate"><span class="pre">h</span></code> orthogonal to
+<code class="docutils literal notranslate"><span class="pre">span{v_s,</span> <span class="pre">v_t}</span></code> is untouched. <code class="docutils literal notranslate"><span class="pre">alpha=2</span></code> is the paper’s
+“double-strength” swap.</p>
+<p>This transform re-reads <code class="docutils literal notranslate"><span class="pre">c</span></code> from the activation seen by every hook.
+It is therefore an involution when applied repeatedly in a subspace
+whose coordinates are preserved between layers: a second application
+can undo the first. For the paper’s multi-layer clamp protocol, use
+<a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_clamp_hooks" title="transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_clamp_hooks"><code class="xref py py-meth docutils literal notranslate"><span class="pre">swap_clamp_hooks()</span></code></a> with activations cached from the clean run.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – The model the hooks will run on.</p></li>
+<li><p><strong>source_token</strong> – The concept to remove (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">France&quot;</span></code>).</p></li>
+<li><p><strong>target_token</strong> – The concept to install (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">China&quot;</span></code>).</p></li>
+<li><p><strong>layers</strong> – Layers to intervene at.</p></li>
 <li><p><strong>alpha</strong> – Swap strength.</p></li>
 <li><p><strong>positions</strong> – Chunk-local positions to swap (negative indices allowed
 and normalized on every hook invocation). Defaults to all.</p></li>
@@ -1493,12 +1610,12 @@ with the <code class="docutils literal notranslate"><span class="pre">pos</span>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="transformer_lens.tools.analysis.jacobian_lens_decomposition.html">
+          <a class="next-page" href="transformer_lens.tools.analysis.jacobian_lens_coordinate_patch.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">transformer_lens.tools.analysis.jacobian_lens_decomposition module</div>
+                <div class="title">transformer_lens.tools.analysis.jacobian_lens_coordinate_patch module</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -1551,6 +1668,8 @@ with the <code class="docutils literal notranslate"><span class="pre">pos</span>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.metadata"><code class="docutils literal notranslate"><span class="pre">JacobianLens.metadata</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.ablation_hooks"><code class="docutils literal notranslate"><span class="pre">JacobianLens.ablation_hooks()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.clear_device_cache"><code class="docutils literal notranslate"><span class="pre">JacobianLens.clear_device_cache()</span></code></a></li>
+<li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch"><code class="docutils literal notranslate"><span class="pre">JacobianLens.coordinate_patch()</span></code></a></li>
+<li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.coordinate_patch_hooks"><code class="docutils literal notranslate"><span class="pre">JacobianLens.coordinate_patch_hooks()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.decompose"><code class="docutils literal notranslate"><span class="pre">JacobianLens.decompose()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.fit"><code class="docutils literal notranslate"><span class="pre">JacobianLens.fit()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.fraction_of_variance"><code class="docutils literal notranslate"><span class="pre">JacobianLens.fraction_of_variance()</span></code></a></li>
@@ -1564,6 +1683,7 @@ with the <code class="docutils literal notranslate"><span class="pre">pos</span>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.save"><code class="docutils literal notranslate"><span class="pre">JacobianLens.save()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.source_layers"><code class="docutils literal notranslate"><span class="pre">JacobianLens.source_layers</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.steering_hooks"><code class="docutils literal notranslate"><span class="pre">JacobianLens.steering_hooks()</span></code></a></li>
+<li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_clamp_hooks"><code class="docutils literal notranslate"><span class="pre">JacobianLens.swap_clamp_hooks()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.swap_hooks"><code class="docutils literal notranslate"><span class="pre">JacobianLens.swap_hooks()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.transport"><code class="docutils literal notranslate"><span class="pre">JacobianLens.transport()</span></code></a></li>
 <li><a class="reference internal" href="#transformer_lens.tools.analysis.jacobian_lens.JacobianLens.validate_model"><code class="docutils literal notranslate"><span class="pre">JacobianLens.validate_model()</span></code></a></li>
